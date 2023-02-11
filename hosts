@@ -1,0 +1,17 @@
+[server]
+127.0.0.1
+
+[remi]
+10.182.65.[14:19]
+
+[remi:vars]
+ansible_connection=ssh
+
+[server:vars]
+ansible_connection=local 
+
+[all:vars]
+ansible_connection=ssh
+ansible_user=remi
+ansible_ssh_pass=remi1234
+ansible_sudo_pass=remi1234
